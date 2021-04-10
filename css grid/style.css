@@ -1,0 +1,36 @@
+.base {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(147, 241, 221);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
+.header .left-aligned {
+    justify-self: flex-start;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5px;
+}
+
+.header .logo {
+    justify-self: center;
+}
+
+.header .right-aligned {
+    justify-self: flex-end;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 5px;
+}
+
+.header .left-aligned div,
+.header .logo,
+.header .right-aligned div {
+    background-color: rgba(87, 181, 218, 0.952);
+    padding: 5px;
+    border-radius: 5px;
+}
